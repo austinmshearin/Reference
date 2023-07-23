@@ -5,3 +5,4 @@ for %%I in (.) do set CurrDirName=%%~nxI
 set VirEnvName=%CurrDirName%_VirEnv
 CALL ./%VirEnvName%/Scripts/activate.bat
 python -m ipykernel install --user --name=%VirEnvName%
+pause
